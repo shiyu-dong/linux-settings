@@ -115,12 +115,24 @@ alias cdm='cd $MAC_HOME'
 alias tag='ctags -R --extra=f .'
 alias tagcpp='ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .'
 
-# KLEE
-export KLEE_DIR=~/Documents/Workspace/KLEE/
-export metaSMT_DIR=~/Documents/Workspace/KLEE/metaSMT
+#General
 export C_INCLUDE_PATH=/usr/include/x86_64-linux-gnu
 export CPLUS_INCLUDE_PATH=/usr/include/x86_64-linux-gnu
-export PATH=$PATH:$KLEE_DIR/llvm-2.9/Release+Asserts/bin:$KLEE_DIR/klee/Release+Asserts/bin:$KLEE_DIR/llvm-gcc4.2-2.9-x86_64-linux/bin
-export LD_LIBRARY_PATH=/usr/lib/:/usr/local/lib/:/usr/lib/i386-linux-gnu:/lib/i386-linux-gnu:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$KLEE_DIR/klee/Release+Asserts/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$metaSMT_DIR/deps/boost-1_52_0/lib:$metaSMT_DIR/deps/Z3-4.1/lib/:$metaSMT_DIR/deps/boolector-1.5.118/lib:$metaSMT_DIR/deps/minisat-git/lib
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/:/usr/local/lib/
+export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+export PATh=$PATH:/opt/gcc-4.3.1/bin
+
+## KLEE
+#export KLEE_DIR=~/Documents/Workspace/KLEE/
+#export metaSMT_DIR=~/Documents/Workspace/KLEE/metaSMT
+#export PATH=$PATH:$KLEE_DIR/llvm-2.9/Release+Asserts/bin:$KLEE_DIR/klee/Release+Asserts/bin:$KLEE_DIR/llvm-gcc4.2-2.9-x86_64-linux/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$KLEE_DIR/klee/Release+Asserts/lib
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$metaSMT_DIR/deps/boost-1_52_0/lib:$metaSMT_DIR/deps/Z3-4.1/lib/:$metaSMT_DIR/deps/boolector-1.5.118/lib:$metaSMT_DIR/deps/minisat-git/lib
+
+# CONAIR
+export LLVM_ROOT=$WORK/llvm-2.8/build431/Release+Asserts/bin
+#export LLVM_ROOT=/home/shiyu/Documents/Workspace/KLEE/llvm-2.9/Release+Asserts/bin
+export LLVM_GCC_ROOT=$WORK/llvm-gcc4.2-2.8-x86_64-linux/bin
+#export LLVM_GCC_ROOT=$WORK/llvm-gcc-4.2-2.8-i686-linux/bin
+export PATH=$LLVM_ROOT:$LLVM_GCC_ROOT:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$WORK/llvm-2.8/build431/Release+Asserts/lib
