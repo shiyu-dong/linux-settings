@@ -22,4 +22,8 @@
   changed = green
   untracked = cyan
 [credential]
-	helper = cache --timeout=3600
+  helper = cache --timeout=3600
+[push]
+  default = matching
+[core]
+  excludesfile = /home/shiyu/.gitignore-global
