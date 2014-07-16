@@ -106,24 +106,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-export WORK=~/Documents/Workspace
-export MAC_HOME=/media/psf/Home/
+export WORK=/local/mnt/workspace/shiyud/
 
 alias cdw='cd $WORK'
 alias cdh='cd ~'
-alias cdm='cd $MAC_HOME'
 alias tag='ctags -R --extra=f .'
 alias tagcpp='ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .'
-
-#General
-export C_INCLUDE_PATH=/usr/include/x86_64-linux-gnu
-export CPLUS_INCLUDE_PATH=/usr/include/x86_64-linux-gnu
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/:/usr/local/lib/
-export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
-#export PATh=$PATH:/opt/gcc-4.3.1/bin
-
-# CONAIR
-export LLVM_ROOT=$WORK/llvm-2.8/build431/Release+Asserts/bin
-export LLVM_GCC_ROOT=$WORK/llvm-gcc4.2-2.8-x86_64-linux/bin
-export PATH=$LLVM_ROOT:$LLVM_GCC_ROOT:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$WORK/llvm-2.8/build431/Release+Asserts/lib

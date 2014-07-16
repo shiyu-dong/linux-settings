@@ -66,13 +66,15 @@ set expandtab
 filetype plugin on
 filetype indent on
 
-" Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
 
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
-" ================ Folds ============================
+" Display tabs and trailing spaces visually
+set listchars=tab:>-,trail:-
+set list
+
+"================ Folds ============================
 
 set foldmethod=indent   "fold based on indent
 set foldnestmax=3       "deepest fold is 3 levels
