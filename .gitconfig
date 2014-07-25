@@ -1,8 +1,10 @@
 [user]
-  name = Shiyu Dong
-  email = shiyud@quicinc.com
+	email = shiyud@quicinc.com
+	name = Shiyu Dong
+[review "review-android.quicinc.com"]
+  username = shiyud
 [format]
-  numbered = auto
+	numbered = auto
 [color]
   ui = auto
   branch = auto
@@ -26,4 +28,7 @@
 [push]
   default = matching
 [core]
-  excludesfile = /home/shiyu/.gitignore-global
+	excludesfile = /usr2/shiyud/.gitignore_global
+	editor = vim
+[init]
+	templatedir = ~/.git_template

@@ -66,12 +66,11 @@ set expandtab
 filetype plugin on
 filetype indent on
 
-
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 " Display tabs and trailing spaces visually
-set listchars=tab:>-,trail:-
+set listchars=tab:\ \ ,trail:-
 set list
 
 "================ Folds ============================
@@ -95,7 +94,6 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 set omnifunc=syntaxcomplete#Complete
-
 
 " ================ Scrolling =========================
 
@@ -144,3 +142,9 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
+
+" =============== Remove Tailing Space ===============
+:command RTS %s/\s\+$//e
+
+" =============== Remove Empty Line ==================
+:command REL %s/\n\{3,}/\r\r/e

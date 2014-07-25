@@ -108,7 +108,28 @@ fi
 
 export WORK=/local/mnt/workspace/shiyud/
 
+rm () { /bin/rm "$@"; }
+cp () { /bin/cp "$@"; }
+
 alias cdw='cd $WORK'
 alias cdh='cd ~'
 alias tag='ctags -R --extra=f .'
-alias tagcpp='ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .'
+alias ctag='ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .'
+
+cstag() {
+  rm -f cscope.files
+  echo Creating list of files in system ...
+  find $PWD -name '*.[chlyCGHL]' -print > cscope.files
+  find $PWD -name '*.cpp' -print >> cscope.files
+  find $PWD -name '*.hh' -print >> cscope.files
+  echo Building Cscope database ...
+  cscope -bi cscope.files
+  CSCOPE_DB=$PWD/cscope.out
+  export CSCOPE_DB
+}
+
+source ~/git/git-completion.sh
+export PATH=$PATH:$HOME/local/bin
+
+VIMRUNTIME=/usr/bin
+EDITOR=/usr/bin/vim
