@@ -1,6 +1,8 @@
 [user]
   name = Shiyu Dong
   email = shiyud@quicinc.com
+[review "review-android.quicinc.com"]
+  username = shiyud
 [format]
   numbered = auto
 [color]

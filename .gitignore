@@ -7,10 +7,17 @@
 .cshrc
 .dbus/
 .dmrc
+.esd_auth
+.evolution/
+.fetch_utf_ril.sh
 .gconf/
+.gconfd/
+.git
+.git_template/
 .gnome2/
 .gtk-bookmarks
 .history
+.lesshst
 .local/
 .login
 .mission-control/
@@ -18,6 +25,7 @@
 .profile
 .pulse-cookie
 .pulse/
+.repoconfig/
 .ssh/
 .snapshot/
 .vboxclient-clipboard.pid
@@ -26,9 +34,9 @@
 .vboxclient-seamless.pid
 .viminfo
 .vim/.netrwhist
+.vnc/
 .volume-info/
 .xsession.local
 .xsession-errors
 .xsession-errors.old
-examples.desktop
-Documents
+git/
