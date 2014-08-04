@@ -36,10 +36,6 @@
 ehthumbs.db
 Thumbs.db
 
-# ctags generated files #
-######################
-tags
-
 # eclipse generated files #
 ######################
 .classpath
@@ -52,6 +48,11 @@ tags
 *.vpw
 *.vtg
 *.vpwhist
+
+# ctags generated files #
+######################
+tags
+cscspe.*
 
 # C #
 ######################
