@@ -28,7 +28,7 @@
 [push]
   default = matching
 [core]
-	excludesfile = /usr2/shiyud/.gitignore_global
+	excludesfile = /usr2/shiyud/.gitignore-global
 	editor = vim
 [init]
 	templatedir = ~/.git_template
