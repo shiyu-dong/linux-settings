@@ -112,7 +112,6 @@ rm () { /bin/rm "$@"; }
 cp () { /bin/cp "$@"; }
 
 alias cdw='cd $WORK'
-alias cdh='cd ~'
 alias tag='ctags -R --extra=f .'
 alias ctag='ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .'
 
