@@ -148,3 +148,4 @@ set completeopt=menuone,menu,longest,preview
 
 " =============== Remove Empty Line ==================
 :command REL %s/\n\{3,}/\r\r/e
+:set ff=unix

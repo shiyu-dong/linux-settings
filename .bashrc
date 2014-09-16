@@ -107,11 +107,13 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export WORK=/local/mnt/workspace/shiyud/
+export WORK2=/local/mnt2/workspace2/shiyud/
 
 rm () { /bin/rm "$@"; }
 cp () { /bin/cp "$@"; }
 
 alias cdw='cd $WORK'
+alias cdw2='cd $WORK2'
 alias tag='ctags -R --extra=f .'
 alias ctag='ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .'
 
