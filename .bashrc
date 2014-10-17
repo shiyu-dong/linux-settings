@@ -130,7 +130,7 @@ cstag() {
 }
 
 source ~/git/git-completion.sh
-export PATH=$PATH:$HOME/local/bin
+export PATH=$PATH:/sbin:$HOME/local/bin
 
 VIMRUNTIME=/usr/bin
 EDITOR=/usr/bin/vim

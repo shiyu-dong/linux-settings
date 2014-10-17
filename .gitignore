@@ -27,8 +27,12 @@ _viminfo
 .pulse-cookie
 .pulse/
 .repoconfig/
+.repopickle_.gitconfig
+.screenrc
 .ssh/
 .snapshot/
+.vas_disauthcc_343625
+.vas_logon_server
 .vboxclient-clipboard.pid
 .vboxclient-display.pid
 .vboxclient-draganddrop.pid
@@ -45,3 +49,6 @@ Documents/
 Downloads/
 git/
 local/
+
+
+
