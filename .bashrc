@@ -122,6 +122,7 @@ cstag() {
   echo Creating list of files in system ...
   find $PWD -name '*.[chlyCGHL]' -print > cscope.files
   find $PWD -name '*.cpp' -print >> cscope.files
+  find $PWD -name '*.cc' -print >> cscope.files
   find $PWD -name '*.hh' -print >> cscope.files
   echo Building Cscope database ...
   cscope -bi cscope.files
